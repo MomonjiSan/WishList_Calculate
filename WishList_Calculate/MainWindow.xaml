@@ -1,0 +1,25 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="Calculate Saving" Height="320" Width="619">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="110,30,0,0" TextWrapping="Wrap" Text="Receipts" VerticalAlignment="Top" Width="59" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="110,78,0,0" TextWrapping="Wrap" Text="Expenses" VerticalAlignment="Top" Width="59" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="110,124,0,0" TextWrapping="Wrap" Text="the price of the desired item" VerticalAlignment="Top" Width="164" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="110,175,0,0" TextWrapping="Wrap" Text="you have to collect money" VerticalAlignment="Top" Width="164" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="391,30,0,0" TextWrapping="Wrap" Text="Baht/Day" VerticalAlignment="Top" Width="59" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="391,78,0,0" TextWrapping="Wrap" Text="Baht/Day" VerticalAlignment="Top" Width="59" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="496,124,0,0" TextWrapping="Wrap" Text="Baht" VerticalAlignment="Top" Width="30" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="496,175,0,0" TextWrapping="Wrap" Text="Day" VerticalAlignment="Top" Width="30" FontWeight="Bold" TextAlignment="Center"/>
+        <Button Content="Calculate" HorizontalAlignment="Center" Height="36" Margin="0,226,0,0" VerticalAlignment="Top" Width="194" Background="#FFD8D8D8" Click="Calculate_Click" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="Receipts" HorizontalAlignment="Left" Margin="174,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" AllowDrop="True"/>
+        <TextBox x:Name="Expenses" HorizontalAlignment="Left" Margin="174,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212"/>
+        <TextBox x:Name="ItemPrice" HorizontalAlignment="Left" Margin="279,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212"/>
+        <TextBox x:Name="DayUse" HorizontalAlignment="Left" Margin="280,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211" IsReadOnly="True" IsUndoEnabled="False"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Height="28" Margin="486,230,0,0" VerticalAlignment="Top" Width="97" Click="Clear_Click"/>
+    </Grid>
+</Window>
